@@ -27,11 +27,9 @@ public class Controller {
 				.println("Please enter a number greater than or equal to 2:");
 		int input = getInt(reader);
 		
-		SievePrime test = new SievePrime(input);
-		
-		for (int i: test.getArrayOfPrimes()){
-			System.out.print(i + ", ");
-		}
+		//SievePrime test = new SievePrime(input);
+		//System.out.println(test.getArrayOfPrimes());
+		System.out.println(TrialDivisionPrime.getPrimeArray(input));
 
 	}
 	

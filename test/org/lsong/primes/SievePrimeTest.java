@@ -12,8 +12,12 @@ public class SievePrimeTest {
 	
 	private ArrayPrime[] arrayPrimes = new ArrayPrime[] {
 			new ArrayPrime(2, 1),
+			new ArrayPrime(3, 2),
+			new ArrayPrime(4, 2),
+			new ArrayPrime(5, 3),
 			new ArrayPrime(10, 4),
 			new ArrayPrime(11, 5),
+			new ArrayPrime(84, 23),
 			new ArrayPrime(1070, 180),
 	// end
 	};

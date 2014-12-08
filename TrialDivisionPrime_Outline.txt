@@ -1,0 +1,24 @@
+	/**
+	 * public static getPrimeArray()
+	 * 
+	 * private static claculateStop(n)
+	 * square root(n) + 1
+	 * 
+	 * 
+	 * given n. check if n is prime by dividing by all numbers up to stopping points
+	 * private static void isPrimeNumber(int n)
+	 * stoppingPt = calculateStop(n)
+	 * for(int i = 1; i < stoppingPoint; i++){
+	 * 	if(n%i == 0) then not a prime return false;
+	 * }
+	 * return true;
+	 * 
+	 * 
+	 * private static checkAllNumbersInRange(int max)
+	 * for (int i = 2, i <= max; i++){
+	 * 	if(isPrimeNumber(i){
+	 * 		primeArray.add(i)
+	 * 	}
+	 * }
+	 *
+	 */

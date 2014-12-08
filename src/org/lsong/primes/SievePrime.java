@@ -33,7 +33,7 @@ public class SievePrime {
 
 		if (max < 2) {
 			throw new IllegalArgumentException(
-					"Number must 2 or greater. There are no prime numbers smaller than 2.");
+					"Number must be 2 or greater. There are no prime numbers smaller than 2.");
 		}
 
 		this.max = max;
