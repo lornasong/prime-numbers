@@ -14,7 +14,7 @@ package org.lsong.primes;
  * Assumes range is no negative (all negative numbers are not prime). Returns
  * list of prime numbers.
  * 
- * @author lornasong
+ * @author lsong
  */
 public class TrialDivisionPrime {
 
