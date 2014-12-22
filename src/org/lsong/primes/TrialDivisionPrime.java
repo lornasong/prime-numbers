@@ -38,12 +38,12 @@ public class TrialDivisionPrime {
 		}
 
 		// Declare prime array and add 2 as a prime number.
-		List<Integer> primeArray = new ArrayList<Integer>();
-		primeArray.add(2);
+		List<Integer> primeList = new ArrayList<Integer>();
+		primeList.add(2);
 
-		checkAllNumbersInRange(max, primeArray);
+		checkAllNumbersInRange(max, primeList);
 
-		return primeArray;
+		return primeList;
 	}
 
 	/**

@@ -21,14 +21,13 @@ import java.util.List;
  */
 public class SievePrime {
 
-	public final int max;
+	private final int max;
 	private int stopNum;// Stopping point
 
 	private BitSet primeBit = new BitSet();// Bitset of index 0 to max-2
-	private final List<Integer> primeArray = new ArrayList<Integer>();// List of
-																		// prime
-																		// numbers
-
+	//List of prime numbers
+	private final List<Integer> primeArray = new ArrayList<Integer>();
+	
 	public SievePrime(int max) {
 
 		if (max < 2) {
@@ -40,7 +39,8 @@ public class SievePrime {
 		this.stopNum = calculateStopNum(max);
 		createBitSet();
 
-		int prime = findNextPrimeIndex();
+		int prime = findNextPrimeIndex();//could just set 0, 1 bit and sit there.
+		//could have set 2 as first prime
 		recursiveSieve(prime);
 		findRemainingPrimes(0);
 	}
@@ -66,7 +66,8 @@ public class SievePrime {
 	 * Sets primeBit from range 0 to max - 2 where index 0 corresponds with
 	 * number 2 and index max -2 corresponds with number max. This is because 0
 	 * and 1 are not prime numbers, so we begin with 2.
-	 */
+	 *///doc private methods are for self. can create in line if only called once.
+	//or if you want to isolate to comment
 	private void createBitSet() {
 		primeBit.set(0, max - 1);
 	}
@@ -77,9 +78,10 @@ public class SievePrime {
 	 * of prime numbers. Then sets the index to false in bitset.
 	 */
 	private int findNextPrimeIndex() {
-		int primeIndex = primeBit.nextSetBit(0);
+		int primeIndex = primeBit.nextSetBit(0);//protect this in case returns -1
+		//b.c no more prime numbers. e.g. if statement.
 
-		primeArray.add(primeIndex + 2);
+		primeArray.add(primeIndex + 2);//kernel method a method that people call. a tiny method.
 		primeBit.set(primeIndex, false);
 
 		return primeIndex;
