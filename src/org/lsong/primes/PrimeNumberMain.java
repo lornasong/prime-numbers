@@ -51,6 +51,7 @@ public class PrimeNumberMain {
 		HandlerCollection handlerCollection = new HandlerCollection();
 		handlerCollection.addHandler(serviceHandler);
 		handlerCollection.addHandler(new LornaHandler());
+		handlerCollection.addHandler(new ErrorHandler());
 		loggingHandler.setHandler(handlerCollection);
 
 		// this could be a collection of handlers or ...
